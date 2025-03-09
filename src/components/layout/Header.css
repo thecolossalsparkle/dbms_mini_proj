@@ -1,0 +1,65 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px 15px;
+  border: 1px solid #e1e5eb;
+  border-radius: 20px;
+  width: 300px;
+  font-size: 14px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  margin-left: -40px;
+  color: #9AA5B1;
+  cursor: pointer;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.notification-button, .message-button {
+  position: relative;
+  background: none;
+  border: none;
+  margin-left: 15px;
+  font-size: 18px;
+  color: #9AA5B1;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.notification-button:hover, .message-button:hover {
+  color: #4169E1;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #FF5252;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 

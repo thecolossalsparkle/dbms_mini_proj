@@ -1,0 +1,268 @@
+.calendar-component {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-header {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #2d3748;
+  text-align: center;
+}
+
+.calendar-content {
+  padding: 0 8px 8px;
+}
+
+/* Day headers - make them more readable */
+.calendar-days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 5px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.day-header {
+  padding: 6px 2px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+/* Month view - larger and more readable */
+.week-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  min-height: 65px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.day-cell {
+  border-right: 1px solid #e2e8f0;
+  padding: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.day-cell:last-child {
+  border-right: none;
+}
+
+.day-number {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.day-appointment {
+  background-color: #4299e1;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 10px;
+}
+
+.appointment-count {
+  color: #4a5568;
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.more-appointments {
+  font-size: 10px;
+  color: #4a5568;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* Week view - larger */
+.week-header {
+  display: grid;
+  grid-template-columns: 45px repeat(7, 1fr);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.hour-label-placeholder,
+.day-column-header {
+  padding: 5px;
+}
+
+.day-name {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.day-date {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hour-row {
+  display: grid;
+  grid-template-columns: 45px repeat(7, 1fr);
+  min-height: 45px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.hour-label {
+  padding: 5px;
+  font-size: 11px;
+  color: #4a5568;
+  text-align: right;
+}
+
+.day-hour-cell {
+  border-right: 1px solid #e2e8f0;
+  padding: 4px;
+  position: relative;
+}
+
+.week-appointment {
+  background-color: #4299e1;
+  color: white;
+  border-radius: 3px;
+  padding: 3px 4px;
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+
+.week-appointment .time {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+/* Day View - larger */
+.hour-slot {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  min-height: 60px;
+}
+
+.hour-events {
+  flex: 1;
+  padding: 4px 6px;
+}
+
+.appointment-event {
+  background-color: #4299e1;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 8px;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+/* Month view */
+.month-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-row:last-child {
+  border-bottom: none;
+}
+
+.day-cell.empty {
+  background-color: #f7fafc;
+  cursor: default;
+}
+
+.day-cell.selected {
+  background-color: rgba(66, 153, 225, 0.1);
+}
+
+.day-cell.selected {
+  background-color: rgba(66, 153, 225, 0.2);
+}
+
+.day-appointments {
+  font-size: 8px;
+}
+
+.day-appointment.confirmed {
+  background-color: #48bb78;
+}
+
+.day-appointment.pending {
+  background-color: #ed8936;
+}
+
+.day-appointment.cancelled {
+  background-color: #e53e3e;
+}
+
+/* Week View */
+.week-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-column-header.today {
+  background-color: rgba(66, 153, 225, 0.1);
+}
+
+.day-column-header.selected {
+  background-color: rgba(66, 153, 225, 0.2);
+}
+
+.week-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-hour-cell:last-child {
+  border-right: none;
+}
+
+.week-appointment.confirmed {
+  background-color: #48bb78;
+}
+
+.week-appointment.pending {
+  background-color: #ed8936;
+}
+
+.week-appointment.cancelled {
+  background-color: #e53e3e;
+}
+
+/* Day View */
+.day-view-hours {
+  display: flex;
+  flex-direction: column;
+}
+
+.hour-slot:last-child {
+  border-bottom: none;
+}
+
+.hour-events {
+  flex: 1;
+  padding: 2px 5px;
+}
+
+.appointment-event.confirmed {
+  background-color: #48bb78;
+}
+
+.appointment-event.pending {
+  background-color: #ed8936;
+}
+
+.appointment-event.cancelled {
+  background-color: #e53e3e;
+} 

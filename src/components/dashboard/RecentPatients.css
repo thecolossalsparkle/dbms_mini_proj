@@ -1,0 +1,145 @@
+.recent-patients {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-patient-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s;
+}
+
+.patient-item:hover {
+  background-color: #f7fafc;
+}
+
+.patient-item:last-child {
+  border-bottom: none;
+}
+
+.patient-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4a5568;
+  flex-shrink: 0;
+}
+
+.patient-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.patient-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2d3748;
+  margin: 0 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.patient-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.patient-detail {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #718096;
+}
+
+.detail-label {
+  color: #a0aec0;
+  margin-right: 4px;
+}
+
+.patient-actions {
+  display: flex;
+  margin-left: 8px;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  color: #4299e1;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.action-button:hover {
+  background-color: #ebf8ff;
+}
+
+.patient-status {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.status-active {
+  background-color: #e6fffa;
+  color: #38b2ac;
+}
+
+.status-pending {
+  background-color: #fffaf0;
+  color: #dd6b20;
+}
+
+.status-inactive {
+  background-color: #e2e8f0;
+  color: #718096;
+}
+
+.see-all-link {
+  align-self: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #4299e1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.see-all-link:hover {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+.see-all-link::after {
+  content: "→";
+  margin-left: 4px;
+}
+
+.no-patients {
+  text-align: center;
+  padding: 20px;
+  color: #a0aec0;
+  font-size: 14px;
+} 

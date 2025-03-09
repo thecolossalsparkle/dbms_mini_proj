@@ -1,0 +1,63 @@
+.patient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.patient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.patient-details h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.patient-info {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.patient-info span {
+  position: relative;
+}
+
+.patient-info span:not(:last-child)::after {
+  content: "•";
+  position: absolute;
+  right: -8px;
+  color: #ccc;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 70px;
+}
+
+.status-badge.stable {
+  background-color: #e3f5e3;
+  color: #2a9d2a;
+}
+
+.status-badge.review {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.status-badge.critical {
+  background-color: #ffebee;
+  color: #d32f2f;
+} 

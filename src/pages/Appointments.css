@@ -1,0 +1,116 @@
+.appointments-container {
+  padding: 15px;
+}
+
+.appointments-header {
+  margin-bottom: 15px;
+}
+
+.appointments-header h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.appointments-header p {
+  font-size: 14px;
+  color: #718096;
+}
+
+.appointments-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.new-appointment-btn {
+  background-color: #4169E1;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.view-toggles {
+  display: flex;
+}
+
+.view-toggles button {
+  padding: 6px 12px;
+  background-color: #f5f7fa;
+  border: 1px solid #e2e8f0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.view-toggles button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.view-toggles button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.view-toggles button.active {
+  background-color: #4169E1;
+  color: white;
+  border-color: #4169E1;
+}
+
+/* New two-column layout */
+.appointments-main-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 20px;
+}
+
+.appointments-calendar-column {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  padding: 10px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.appointments-details-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointment-schedule-section,
+.upcoming-appointments-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  padding: 15px;
+}
+
+.appointment-schedule-section h2,
+.upcoming-appointments-section h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .appointments-main-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .appointments-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .new-appointment-btn {
+    margin-bottom: 10px;
+  }
+} 

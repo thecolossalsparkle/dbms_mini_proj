@@ -1,0 +1,70 @@
+.upcoming-appointments-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-upcoming {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  color: #718096;
+}
+
+.upcoming-appointment-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.appointment-date {
+  min-width: 60px;
+  text-align: center;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.appointment-info {
+  flex: 1;
+}
+
+.appointment-name {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.appointment-time-type {
+  font-size: 13px;
+  color: #718096;
+}
+
+.appointment-time-type .time {
+  font-weight: 500;
+}
+
+.appointment-status-indicator {
+  margin-left: 10px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #48bb78;
+}
+
+.status-dot.pending {
+  background-color: #ed8936;
+}
+
+.status-dot.cancelled {
+  background-color: #e53e3e;
+} 

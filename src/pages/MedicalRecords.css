@@ -1,0 +1,52 @@
+.medical-records-container {
+  padding: 20px;
+}
+
+.records-header {
+  margin-bottom: 20px;
+}
+
+.records-header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.records-actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.new-record-btn {
+  background-color: #4169E1;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.search-container {
+  flex: 1;
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.filter-sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+} 

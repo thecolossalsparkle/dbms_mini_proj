@@ -1,0 +1,226 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-header {
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.welcome-message {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.today-date {
+  font-size: 14px;
+  color: #777;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.action-button {
+  background-color: #4169E1;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #3551b5;
+}
+
+.appointments-list, .prescriptions-list, .test-results-list, .reminders-list {
+  padding: 0 20px;
+}
+
+.appointment-item, .prescription-item, .test-result-item, .reminder-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.appointment-item:last-child, .prescription-item:last-child, .test-result-item:last-child, .reminder-item:last-child {
+  border-bottom: none;
+}
+
+.appointment-info h3, .prescription-info h3, .test-info h3, .reminder-info h3 {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.appointment-info p, .prescription-info p, .test-info p, .reminder-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 3px 0;
+}
+
+.appointment-time, .prescription-date, .test-date {
+  font-size: 13px;
+  color: #888;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-badge.confirmed {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status-badge.pending {
+  background-color: #feebc8;
+  color: #744210;
+}
+
+.status-badge.normal {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status-badge.elevated {
+  background-color: #fed7d7;
+  color: #822727;
+}
+
+.appointment-actions, .prescription-refills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.action-link {
+  background: none;
+  border: none;
+  color: #4169E1;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+.refills-badge {
+  background-color: #e9f5fe;
+  color: #2b6cb0;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.view-all-button {
+  background: none;
+  border: none;
+  color: #4169E1;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.view-all-button:hover {
+  text-decoration: underline;
+}
+
+.reminder-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.reminder-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #e9f5fe;
+  color: #4169E1;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.test-result {
+  text-align: right;
+}
+
+.result-value {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+} 
